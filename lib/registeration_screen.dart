@@ -32,7 +32,7 @@ class RegisterScreen extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Icon(Icons.arrow_back, color: Colors.black),
+                          Icon(Icons.arrow_back, color: Colors.white),
                           TextButton(
                             onPressed: () {
                               // Navigate to a new screen on button press
@@ -44,7 +44,7 @@ class RegisterScreen extends StatelessWidget {
                             child: Text(
                               'Login',
                               style: TextStyle(
-                                color: Colors.black,
+                                color: Colors.white,
                                 fontWeight: FontWeight.bold,
                                 fontFamily: 'Poppins',
                               ),
@@ -56,7 +56,7 @@ class RegisterScreen extends StatelessWidget {
                       Text(
                         'Register',
                         style: TextStyle(
-                          color: Colors.black,
+                          color: Colors.white,
                           fontSize: 32,
                           fontFamily: 'Poppins',
                           fontWeight: FontWeight.bold,
@@ -66,7 +66,7 @@ class RegisterScreen extends StatelessWidget {
                       Text(
                         'Lorem ipsum dolor sit amet, consectetur\nadipiscing elit, sed do tempor',
                         style: TextStyle(
-                          color: Colors.black,
+                          color: Colors.white,
                           fontSize: 14,
                           fontFamily: 'Poppins',
                         ),
@@ -187,7 +187,7 @@ class SocialLoginButton extends StatelessWidget {
           padding: EdgeInsets.symmetric(vertical: 16),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(30.0),
-            side: BorderSide(color: Colors.black),
+            side: BorderSide(color: Colors.white),
           ),
           textStyle: TextStyle(
             fontSize: 16,
@@ -198,3 +198,203 @@ class SocialLoginButton extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+// import 'package:flutter/material.dart';
+//
+// class SelectionScreen extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       backgroundColor: Color(0xFF3B6943), // Background color
+//       body: SafeArea(
+//         child: Column(
+//           crossAxisAlignment: CrossAxisAlignment.stretch,
+//           children: [
+//             Expanded(
+//               flex: 3,
+//               child: Container(
+//                 padding: EdgeInsets.all(32),
+//                 decoration: BoxDecoration(
+//                   gradient: LinearGradient(
+//                     begin: Alignment.topCenter,
+//                     end: Alignment.bottomCenter,
+//                     colors: [Color(0xFF3B6943), Color(0xFF2B4C2F)],
+//                   ),
+//                   borderRadius: BorderRadius.only(
+//                     bottomLeft: Radius.circular(30),
+//                     bottomRight: Radius.circular(30),
+//                   ),
+//                   boxShadow: [
+//                     BoxShadow(
+//                       color: Colors.black.withOpacity(0.5),
+//                       blurRadius: 10,
+//                       offset: Offset(0, 5),
+//                     ),
+//                   ],
+//                 ),
+//                 child: Column(
+//                   mainAxisAlignment: MainAxisAlignment.center,
+//                   children: [
+//                     Text(
+//                       'Welcome to',
+//                       style: TextStyle(
+//                         color: Colors.white,
+//                         fontSize: 24,
+//                         fontWeight: FontWeight.bold,
+//                         fontFamily: 'Poppins',
+//                       ),
+//                     ),
+//                     SizedBox(height: 8),
+//                     Text(
+//                       'Coaching App',
+//                       style: TextStyle(
+//                         color: Colors.white,
+//                         fontSize: 36,
+//                         fontWeight: FontWeight.bold,
+//                         fontFamily: 'Poppins',
+//                         letterSpacing: 2,
+//
+//                         shadows: [
+//                           Shadow(
+//                             offset: Offset(2.0, 2.0),
+//                             blurRadius: 3.0,
+//                             color: Color.fromARGB(128, 0, 0, 0),
+//                           ),
+//                         ],
+//                       ),
+//                     ),
+//                     SizedBox(height: 16),
+// Text(
+// 'APPLICATION',
+// style: TextStyle(
+// fontSize: 20,
+// fontWeight: FontWeight.w300,
+// fontFamily: 'Poppins',
+// letterSpacing: 4,
+// color: Colors.white70,
+// shadows: [
+// Shadow(
+// offset: Offset(1.0, 1.0),
+// blurRadius: 2.0,
+// color: Color.fromARGB(128, 0, 0, 0),
+// ),
+// ],
+// ),
+// ),
+//                     Text(
+//                       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+//                       textAlign: TextAlign.center,
+//                       style: TextStyle(
+//                         color: Colors.white.withOpacity(0.8),
+//                         fontSize: 16,
+//                         fontFamily: 'Poppins',
+//                       ),
+//                     ),
+//                   ],
+//                 ),
+//               ),
+//             ),
+//             Expanded(
+//               flex: 4,
+//               child: Container(
+//                 padding: EdgeInsets.symmetric(horizontal: 32, vertical: 24),
+//                 decoration: BoxDecoration(
+//                   color: Colors.white,
+//                   borderRadius: BorderRadius.only(
+//                     topLeft: Radius.circular(30),
+//                     topRight: Radius.circular(30),
+//                   ),
+//                 ),
+//                 child: Column(
+//                   mainAxisAlignment: MainAxisAlignment.center,
+//                   children: [
+//                     ElevatedButton(
+//                       onPressed: () {
+//                         // Navigate to guest visit screen
+//                       },
+//                       style: ElevatedButton.styleFrom(
+//                         foregroundColor: Colors.white, backgroundColor: Color(0xFF3B6943),
+//                         padding: EdgeInsets.symmetric(vertical: 16),
+//                         shape: RoundedRectangleBorder(
+//                           borderRadius: BorderRadius.circular(30),
+//                         ),
+//                         elevation: 5,
+//                       ),
+//                       child: Container(
+//                         width: double.infinity,
+//                         alignment: Alignment.center,
+//                         child: Text(
+//                           'Visit as Guest',
+//                           style: TextStyle(
+//                             fontSize: 18,
+//                             fontWeight: FontWeight.bold,
+//                             fontFamily: 'Poppins',
+//                           ),
+//                         ),
+//                       ),
+//                     ),
+//                     SizedBox(height: 16),
+//                     OutlinedButton(
+//                       onPressed: () {
+//                         // Navigate to official login screen
+//                       },
+//                       style: OutlinedButton.styleFrom(
+//                         side: BorderSide(color: Color(0xFF3B6943)),
+//                         padding: EdgeInsets.symmetric(vertical: 16),
+//                         shape: RoundedRectangleBorder(
+//                           borderRadius: BorderRadius.circular(30),
+//                         ),
+//                       ),
+//                       child: Container(
+//                         width: double.infinity,
+//                         alignment: Alignment.center,
+//                         child: Text(
+//                           'Official Login',
+//                           style: TextStyle(
+//                             fontSize: 18,
+//                             fontWeight: FontWeight.bold,
+//                             fontFamily: 'Poppins',
+//                             color: Color(0xFF3B6943),
+//                           ),
+//                         ),
+//                       ),
+//                     ),
+//                   ],
+//                 ),
+//               ),
+//             ),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+// }
